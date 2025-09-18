@@ -36,17 +36,28 @@ b =        # ← Edite o fim do intervalo
 4. Soma as áreas de todos os retângulos
 
 ### Testes Realizados
-O programa foi validado manualmente com os seguintes casos:
+O programa foi validado manualmente com os seguintes casos: (É possível testá-los executando o arquivo `TestesUnitários.py`)
 
-• ∫(2x + 3)dx de 0 a 5 → Resultado: 40 ✓
+• ∫(x² + 2x + 1) dx de 0 a 2 → Resultado: 8.666 ✓
 
-• ∫(x²)dx de 0 a 3 → Resultado: 9 ✓
+• ∫(x) dx de 3 a 1 → Resultado: -4 ✓
 
-• ∫(sin(x))dx de 0 a π → Resultado: 2 ✓
+• ∫(2x + 3) dx de 0 a 5 → Resultado: 40 ✓
 
-• ∫(x)dx de 3 a 1 → Resultado: -4 ✓ (intervalo invertido)
+• ∫(sin(x)) dx de 0 a π → Resultado: 2 ✓ 
 
-• ∫(exp(x))dx de 0 a 1 → Resultado: e - 1 ≈ 1.718 ✓
+• ∫(e^x) dx de 0 a 1 → Resultado: e - 1 ≈ 1.718 ✓
+
+• ∫(ln(x)) dx de 1 a e → Resultado: 1.0 ✓
+
+• ∫(√x) dx de 0 a 4 → Resultado: 5.333 ✓
+
+• ∫(sin(x) + x²) dx de 0 a π/2 → Resultado: 2.291 ✓
+
+• ∫(1/(1 + x)) dx de 0 a 1 → Resultado: ln(2) ≈ 0.693 ✓
+
+• ∫(sin(x²)) dx de 0 a 1 → Resultado: 0.310 ✓
+
 
 ## Autora
 Fernanda Silveira Reis - Estudante de Engenharia de Computação na UFC
