@@ -2,38 +2,45 @@ import sympy as sp
 
 x = sp.symbols('x')
 
-#mudar os parâmetros aqui!
+#colocar os parâmetros aqui!
 funcao = 
 a = 
 b = 
 
-n = 10000   #número de retângulos usável
+#número de retângulos usável
+n = 10000   
 
-T = (b - a) / n #base dos retângulos (iguais para todo o intervalo) 
+#base dos retângulos (iguais para todo o intervalo)
+T = (b - a) / n  
 
-X = []  #valores dos pontos que dividem as partições + fim e início do intervalo
+ #valores dos pontos que dividem as partições + fim e início do intervalo
+X = [] 
 for i in range(1,n):
     divisao = a + i*T
     X.append(divisao)   
 X.insert(0, a)
 X.insert(n,b)
 
-C = []     #valores usados para achar alturas de cada retângulo (ponto médio)
+#valores usados para achar alturas de cada retângulo (ponto médio)
+C = []     
 for i in range(1,n+1):
     amostra = (X[i-1] + X[i]) / 2
     C.append(amostra)
 
-H = []       #valores das alturas de cada retângulo
+#valores das alturas de cada retângulo
+H = []       
 for i in C:
     altura = float(funcao.subs(x,i))
     H.append(altura)
 
-A = []         #valores das áreas de cada retângulo 
+ #valores das áreas de cada retângulo 
+A = []        
 for altura in H:
     area = altura * T
     A.append(area)
 
-S = 0       #soma das áreas
+#soma das áreas
+S = 0       
 for area in A:
     S += area
 
