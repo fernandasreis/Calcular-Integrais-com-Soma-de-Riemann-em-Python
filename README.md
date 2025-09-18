@@ -1,0 +1,1 @@
+# Calcular-Integrais-com-Soma-de-Riemann-em-Python
