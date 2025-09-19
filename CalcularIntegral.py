@@ -47,7 +47,7 @@ def calcularIntegral(funcao,a,b,n=10000):
     return float(S) if not hasattr(S, 'evalf') else float(S.evalf())
 
 
-#aó executa se rodar o arquivo diretamente
+#só executa se rodar o arquivo diretamente
 if __name__ == "__main__":
     x = sp.symbols('x')
     
